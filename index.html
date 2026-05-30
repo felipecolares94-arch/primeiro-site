@@ -22,7 +22,7 @@
       <section>
         <h2>Sobre mim</h2>
         <p>Olá! sou apaixonado por código, desing e por construir coisas que funcionam bem </p>
-        <p class="destaque">Esta é minha primeira página feita do zero em HTML e CSS</p>
+        <p class="destaque">Esta página ainda está em desenvolvimento!</p>
       </section>
 
       <section class="skills">
@@ -64,19 +64,33 @@
         </div>
       </section>
 
-
-
-
       <section>
         <h2>Vamos conversar?</h2>
         <p>Você pode me encontrar nos meus perfis ou me mandar uma mensagem</p>
         <a href="https://github.com/felipecolares94-arch" target="_blank">Meu GitHub</a>
-        <button>Enviar mensagem</button>
+        <button class="btn-mensagem">Enviar mensagem</button>
+
+        <form class="formulario-contato escondido">
+          <label>Nome:</label>
+          <input type="text" class="input-nome" />
+
+          <label>Email:</label>
+          <input type="email" class="input-email" />
+
+          <label>Mensagem:</label>
+          <textarea class="input-mensagem"></textarea>
+
+          <button type="submit">Enviar</button>
+
+          <p class="feedback"></p>
+        </form>
+
       </section>
     </main>
 
     <footer>
       <p>Feito com HTML e CSS em 2026</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
