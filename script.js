@@ -2,6 +2,7 @@ const botaoMensagem = document.querySelector('.btn-mensagem');
 const formularioContato = document.querySelector('.formulario-contato');
 const inputNome = document.querySelector('.input-nome');
 const feedback = document.querySelector('.feedback');
+const listaSkills = document.querySelector('.lista-skills');
 
 // Evento de click
 
@@ -33,9 +34,28 @@ formularioContato.addEventListener('submit', (evento) => {
         feedback.innerHTML = '';
     })
 
-    
-
     formularioContato.reset();
 });
+
+const skills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Flexbox',
+    'Responsividade',
+    'Arrow Function',
+    'DOM',
+    'Template literals',
+];
+
+const renderizarSkills = () => {
+    const skilssHTML = skills.map((skill) => {
+        return`<li> ${skill}</li>`
+    });
+    
+    listaSkills.innerHTML = skilssHTML.join('');
+}
+
+renderizarSkills();
 
 
